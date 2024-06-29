@@ -27,6 +27,6 @@ plt.axis((0, amt, min(Y)-0.2*abs(min(Y)), 1.2*max(Y)))
 # display grid lines
 plt.grid(True)
 # title
-plt.title('Datasets example')
+plt.title('Datasets and scatter diagram example')
 # show graph
 plt.show()
