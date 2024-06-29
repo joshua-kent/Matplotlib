@@ -4,7 +4,7 @@ import numpy as np
 import math
 plt.rcParams['text.usetex'] = True # uses tex font
 
-# creturns list of coefficients for power series for sine is x - x^3/3! + x^5/5! - x^7/7! etc.
+# returns list of coefficients for power series for sine is x - x^3/3! + x^5/5! - x^7/7! etc.
 def taylor_sine(n):
     k = 0
     p = []
