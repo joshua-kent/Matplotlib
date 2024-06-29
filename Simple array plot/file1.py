@@ -15,5 +15,4 @@ plt.plot(t, t, 'r--', t, t**0.5, 'bs', t, np.e**t, 'g^')
 # s square
 # o circle
 # ^ triangle
-
 plt.show()
