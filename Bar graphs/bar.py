@@ -22,4 +22,6 @@ plt.plot(x1, f(x1), 'k--')
 plt.bar(x2, f(x2))
 plt.axes((-10,10,0.0, 1.5*max(x1)))
 
+plt.suptitle("$y= \\frac{1}{\\sqrt{1+x^2}}$ graphs", fontsize=20)
+
 plt.show()
