@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import scipy.stats
-import math
 
 fig = plt.figure()
 ax1 = fig.add_subplot(121)
