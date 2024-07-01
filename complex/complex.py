@@ -28,7 +28,7 @@ def julia(z, c, iters=500):
     return abs(id)
 
 
-prec = 2000
+prec = 3000
 
 fig = plt.figure()
 ax1 = fig.add_subplot(121)
@@ -52,7 +52,7 @@ ax1.set_title('Mandelbrot set')
 # julia
 c = -0.8 + 0.156j
 x_lims_j, y_lims_j = (-2, 2), (-2, 2)
-x_j = np.linspace(x_lims_j[0], x_lims_j[1], round(prec/3))
+x_j = np.linspace(x_lims_j[0], x_lims_j[1], round(prec/4))
 y_j = np.linspace(y_lims_j[0], y_lims_j[1], round(prec/4))
 xx_j, yy_j = np.meshgrid(x_j, y_j)
 zz_j = xx_j + yy_j * 1j

@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider
-from matplotlib import colors
 import numpy as np
 import cmath
 
@@ -18,23 +17,23 @@ def julia(z, c, iters=500):
 
 update_title = lambda : ax.set_title(f'Julia set, $z^2 + {np.round(c.real,2)} + {np.round(c.imag,2)}i$')
 
-prec = 1200
-iters = 100
+prec = 1000
+iters = 200
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
 fig.subplots_adjust(bottom=0.3)
 
-c = 0 + 0j
+c = 0+ 0j
 x_lims_j, y_lims_j = (-2, 2), (-2, 2)
-x_j = np.linspace(x_lims_j[0], x_lims_j[1], round(prec/3))
+x_j = np.linspace(x_lims_j[0], x_lims_j[1], round(prec/4))
 y_j = np.linspace(y_lims_j[0], y_lims_j[1], round(prec/4))
 xx_j, yy_j = np.meshgrid(x_j, y_j)
 zz_j = xx_j + yy_j * 1j
 zz_j_final = julia(zz_j, c, iters)
 
 h_ax2 = ax.imshow(zz_j_final,
-                   cmap='seismic',
+                   cmap='copper',
                    extent=[x_lims_j[0], x_lims_j[1], y_lims_j[0], y_lims_j[1]],
                    norm='log')
 ax.axis('off')
