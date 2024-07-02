@@ -22,6 +22,8 @@ for q, pos in charges:
     charge_y = (Y - pos[1])
     charge_complex = charge_x + charge_y * 1j
     distance = abs(charge_complex)
+    # v     applies inverse square law, first divide by distance to normalise to direction vector
+    #       then divide by squared distance
     force_contribution = q * charge_complex / (distance ** 3)
     force += force_contribution
 
