@@ -16,8 +16,8 @@ ax.errorbar(x = x,
             yerr = y_errs,
             xerr = x_errs,
             marker='x',
-            capsize=5,
-            ecolor='k')
+            capsize=5,              # size of the 'caps' on the error bars
+            ecolor='k')             # colour of errorbars
 
 ax.set_title("Simple errorbars")
 ax.grid(visible = True)
